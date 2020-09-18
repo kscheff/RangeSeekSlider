@@ -69,7 +69,7 @@ import UIKit
     }
 
     /// The font of the minimum value text label. If not set, the default is system font size 12.0.
-    open var minLabelFont: UIFont = UIFont.systemFont(ofSize: 12.0) {
+    @IBInspectable open var minLabelFont: UIFont = UIFont.systemFont(ofSize: 12.0) {
         didSet {
             minLabel.font = minLabelFont as CFTypeRef
             minLabel.fontSize = minLabelFont.pointSize
@@ -77,7 +77,7 @@ import UIKit
     }
 
     /// The font of the maximum value text label. If not set, the default is system font size 12.0.
-    open var maxLabelFont: UIFont = UIFont.systemFont(ofSize: 12.0) {
+    @IBInspectable open var maxLabelFont: UIFont = UIFont.systemFont(ofSize: 12.0) {
         didSet {
             maxLabel.font = maxLabelFont as CFTypeRef
             maxLabel.fontSize = maxLabelFont.pointSize
